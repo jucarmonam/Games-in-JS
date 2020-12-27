@@ -1,0 +1,22 @@
+.grid{
+    width: 200px;      /*el tamaño lo ponemos mas que 20*10 px para poder ver la cuadricula pero tambien lo podemos poner exacto para usarlo, pero sin ver la cuadricula*/
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    background-color: green;
+    margin: auto;
+}
+
+.grid div{
+    width: 20px;
+    height: 20px;
+}
+
+.snake{
+    background-color: blue;
+}
+
+.apple{
+    background-color: white;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    
+    <input type="text" id="number" size="3"> +
+    <input type="text" id="number2" size="3">
+
+    <button id="btn">Check</button>
+    <p id="para"></p>
+
+    <!--The type attribute specifies the Internet media type (formerly known as MIME type) of a script.-->
+    <!-- internal js -->
+    <script type="text/javascript">
+    
+    /*
+       var num1 = prompt("Enter first 1/2");  //con prompt desplegamos un dialog con un mensaje y un input de tipo string
+       var num2 = prompt("Enter Last Number 2/2") ;
+
+       var totalNumbers = parseInt(num1) + parseInt(num2); //con parseInt convertimos lo de adentro en enteros
+
+       document.write(totalNumbers);
+    */
+
+    /*
+        var sentence = "Hello World";   //podemos verlo como un objeto por tanto podemos usar funciones usando el punto o dot "."
+
+        var largo = sentence.length; //aqui obtenemos el largo del objeto string
+        var Stringindex = sentence.indexOf('World'); //con indexOf obtenemos la posicion de lo que le pasemos ya sea una letra o una palabra nos da el primer index de la palabra como si fuera un arreglo
+        var subString = sentence.substring(0,5); //obtenemos el substring normal desde el primer index hasta n-1 en este caso desde 0 hasta 4
+        var replaceString = sentence.replace('World', 'From Javascript');//reemplazamos el primer string por el segundo
+
+        document.write(replaceString);
+    */
+
+    /*
+        var age = 19;
+        var price = 2500.5594;
+
+        var string = age.toString(); //convertimos el entero a string
+        var priceFix = price.toFixed(2); //un decimal lo redondeamos y reducimos a 2 decimales
+
+        document.write(priceFix);
+    */
+
+    /*
+        var books = ['Physics', 'Computer', 'Maths'];
+
+        //books[3] = "CS201";  //agregamos un elemento en la posicion indicada
+
+        books.push('Abs. Maths'); //agregamos un nuevo elemento al final del arreglo
+        books.unshift('inicio'); //agregamos un elemento al inicio del arreglo
+        books.shift(); //removemos el primero elemento del arreglo
+        books.pop(); //removemos el ultimo elemento del arreglo
+        //books.sort(); //ordena los elementos del arreglo en este caso como son strings los ordena alfabeticamente
+        //books.reverse(); //pone los elementos empezando desde el ultimo hasta el primero
+        books.sort().reverse(); //los ordena pero de la forma contraria en este caso alfabeticamente pero desde la z hasta la a
+
+        document.write(books);
+    */
+
+    /*
+    var person = {   //con un var el nombre y corchetes creamos un objeto 
+
+        firstName: 'John',   //estas son las propiedades del objeto separadas por ',' y asignadas con ':'
+        lastName: 'Doe',
+        age: 19,
+        name: function(){    //podemos crear un metodo o funcion en el objeto en este caso con una funcion anonima para obtener su nombre completo
+            return this.firstName + ' ' + this.lastName; //el this es para referirnos al objeto en el que estamos para obtener sus valores
+        },
+
+        education: {       //podemos crear un objeto educacion dentro de persona
+            school: {      //creamos un objeto escuela dentro de educacion
+                name: 'ABC',
+                located: 'XYZ'
+            },
+            college: {
+                name: 'XYZ',
+                located: 'ABC'
+            }
+        }
+    }
+
+        //document.write( person.firstName );  //con el nombre del objeto y punto llamamos a su variable como en java
+        //document.write( person.name() ); //obtenemos la funcion que llama su nombre
+        document.write( person.education.college.name ); //de esta forma accedemos a los objetos dentro de objetos y sus propiedades
+    */
+
+    /*
+
+    document.getElementById("btn").onclick = function() {   //obtenemos el elemento con id btn de html y al darle clicl agregamos una funcion
+        
+        var number = document.getElementById("number").value; //obtenemos el valor del objeto con id number y lo guardamos en number
+
+        //document.getElementById("para").innerHTML = number;  //dentro del objeto con id para ponemos el valor de number
+        
+        var para = document.getElementById("para");   //hacemos lo mismo de arriba, pero viendolo como objetos
+        para.innerHTML = number;
+    };
+    */
+    </script>  
+</body>
+</html>

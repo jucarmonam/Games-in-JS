@@ -1,0 +1,39 @@
+.grid{
+    display: flex;
+    flex-flow: row wrap;   /*es una forma facil de escribir flex direction y flex wrap juntos, el row(fila) nos lo pone en fila y el wrap es el autoajuste*/
+    justify-content: center;
+    align-content: center;
+    height: 300px;  /*aqui definimos la altura en la que empieza el flex-box*/
+    width: 786px;   /*aqui definimos su ancho*/
+    margin: auto;   /*lo centramos*/
+}
+
+.square{
+    width: 256px;
+    height: 256px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+.mole{    /*topo*/
+    background-image: url('mole.jpg');
+    background-size: cover;
+}
+
+li{  /*especificamons la lista li de los botones*/
+    display: inline-block; /*me permite usar el padding dentro del bloque*/
+    text-align: center;
+    margin-left: var(--espacios);   /*establecemos la margen izquierda del elemento, osea el espacio de ellos desde la izquierda*/
+    margin-bottom: var(--espacios-contenido); /*para separarlo del elemento de debajo*/
+    padding: 6px 12px;   /*espacio dentro de las cajas, alto y ancho lo que nos permite saber tambien donde va a quedar el borde*/
+    border: 1px solid blue;  /*borde para ponerlo en un recuadro*/
+    list-style: none;   
+    color: blue;
+  }
+
+li:hover{ /*lo que pasa cuando pasa el mouse sobre el elemento*/
+    background: red;  /*cambiamos el fondo al color de las letras*/
+    color: #fff;     /*y el color de las letras al blanco que es el mismo del fondo*/
+    cursor: pointer; /*al no ser de tipo 'a' sino tipo 'li' activamos esto para que cambie a la manita tambien se le pueden poner muchas otras formas de cursor*/
+}

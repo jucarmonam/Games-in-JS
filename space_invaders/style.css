@@ -1,0 +1,30 @@
+.grid{
+    width: 400px;      /*el tamaño lo ponemos mas que 20*10 px para poder ver la cuadricula pero tambien lo podemos poner exacto para usarlo, pero sin ver la cuadricula*/
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    margin: auto;
+}
+
+.grid div{
+    width: 20px;
+    height: 20px;
+}
+
+.rocket{
+    background-color: blue;
+}
+
+.shot{ /*disparo*/
+    background-color: orange;
+}
+
+.invader{
+    background-color: purple;
+    border-radius: 10px;
+}
+
+.kill{
+    background-color: red;
+}
